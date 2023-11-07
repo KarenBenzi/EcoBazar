@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/Logo-gris.ico">
+    <title>EcoBazar</title>
+</head>
+
+<body onload="inicioNovedades()">
+
+    <div id="barraNavegacion">
+    </div>
+
+    <!-- INICIO MARCA -->
+
+    <div class="animacion-aparecer pt-5">
+        <div class="text-center"><img src="img/Marca.png" alt="" class="m-auto">
+            <h2 class="color-gris-oscuro"><i>Compromiso ecológico desde la reutilización.</i></h2>
+        </div>
+        <div class="container text-center my-5 ">
+            <a href="catalogo.html" class="boton-verde px-4 py-2">
+                <div class="btn text-light mb-1">Ver Tienda</div>
+            </a>
+        </div>
+    </div>
+    <!-- FIN MARCA -->
+
+
+    <!-- INICIO MOSAICO -->
+    <div class="container mt-5 py-5">
+        <div class="row">
+            <div class="col-md-8 mb-4">
+                <div class="contenedor-mosaico">
+                    <a href="catalogo.html?categoria=electronica" class="color-blanco">
+                        <img src="img/mosaico1.png" alt="Imagen 1" class="img-fluid mosaico-imagen">
+                        <div class="overlay">
+                            <h1 class="color-light texto-grande">Electrónica</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <div class="contenedor-mosaico">
+                            <a href="catalogo.html?categoria=indumentaria" class="color-blanco">
+                                <img src="img/mosaico2.png" alt="Imagen 2"
+                                    class="img-fluid mosaico-imagen align-self-start">
+                                <div class="overlay">
+                                    <h1 class="color-light">Indumentaria</h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 pt-lg-4 pt-md-4">
+                        <div class="contenedor-mosaico">
+                            <a href="catalogo.html?categoria=accesorios" class="color-blanco">
+                                <img src="img/mosaico3.png" alt="Imagen 3"
+                                    class="img-fluid mosaico-imagen align-self-start">
+                                <div class="overlay">
+                                    <h1 class="color-light">Accesorios</h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- FIN MOSAICO -->
+
+
+    <!-- INICIO DESTACADOS -->
+    <h3 class="color-principal text-center py-3"> <strong>🔥 Nuevos Ingresos 🔥</strong></h3>
+
+    <div class="container">
+        <div class="row d-none d-lg-inline-flex" id="novedadesInicioGrid">
+            <!-- Las cartas se generarán aquí -->
+        </div>
+    </div>
+
+    <div class="container d-lg-none" id="novedadesInicioCarousel">
+
+    </div>
+    <!-- FIN DESTACADOS -->
+
+
+    <!-- INICIO SEGUINOS -->
+    <div class="bg-dark bg-gradient py-5 my-5 text-center link-light">
+        <div class=" d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <h1 class="iconoig"><i class="bi bi-instagram px-2 mx-5 bi-ig"></i></h1>
+            <div>
+                <p>Seguinos en</p>
+                <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                    class="link-light link-opacity-50-hover text-decoration-none">
+                    <h3><b>ECO BAZAR</b></h3>
+                </a>
+                <p>y enterate de nuestros nuevos ingresos</p>
+            </div>
+        </div>
+    </div>
+    <!-- FIN SEGUINOS -->
+
+    <!-- INICIO FRASE -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 my-auto text-center text-lg-left pb-5 p-lg-0">
+                    <h2 class="color-principal">¡Quiero sumarme al cambio!</h2>
+                    <p>Vení a pedir una cotización para sumar los productos que ya no utilices, a nuestro catálogo.</p>
+                    <a href="https://www.google.com/maps/place/Av.+Independencia+234,+C1099AAP+CABA/@-34.617147,-58.36947,15z/data=!4m5!3m4!1s0x95a334d4efdc796d:0x653d7a2a9cf93864!8m2!3d-34.6171475!4d-58.3694699?hl=es&entry=ttu"
+                        class="text-decoration-none link-secondary" target="_blank">
+                        <p><i class="bi bi-geo-alt-fill"></i> Encontranos en Av. Independencia 234 (CABA)</p>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-6"><img src="img/local.jpg" alt="" class="img-fluid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIN FRASE -->
+
+    <!-- INICIO CARTELES  -->
+    <div class="row align-items-center py-5">
+        <div class="col-12 px-lg-5 px-3 text-center d-flex flex-column justify-content-between">
+            <div class=" border rounded m-5 px-lg-5 px-3 py-3 shadow tenes-dudas">
+                <div>
+                    <h3 class="text-white">¿Tenés dudas?</h3>
+                    <p class="text-white">Podés revisar nuestra sección de <i>preguntas frecuentes.</i> También
+                        recibimos consultas por
+                        mensajería.</p>
+                </div>
+                <div class="align-self-end mx-auto">
+                    <a class="btn btn-success" href="contacto.html#preguntasFrecuentes">Preguntas Frecuentes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN CARTELES -->
+
+    <div id="footer">
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

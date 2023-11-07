@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="shortcut icon" href="/img/Logo-gris.ico">
+        <title>EcoBazar</title>
+</head>
+
+<body onload="llamadoApitotal()">
+    <div id="barraNavegacion">
+        
+    </div>
+
+    <!-- INICIO MENÚ BUSQUEDA CATALOGO -->
+
+    <div class="container text-center p-5 ">
+        <h6> <a href="index.html" class="text-decoration-none color-principal"> Inicio
+            </a> /
+            <a href="catalogo.html?categoria=verTodo" class="text-decoration-none color-principal">Catálogo </a>
+        </h6>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-3 col-md-12 text-center">
+            <div class="container d-lg-block d-flex flex-column text-center">
+                <div class="botones-busqueda">
+                    <h5 class="color-enfasis text-center py-3 color-principal">Categorías</h5>
+                    <button class="btn center-block btn-sm ordenar-btn btn-toggle  text-secondary"
+                        id="indumentaria">Indumentaria</button> <br class="d-none d-lg-block">
+                    <button class="btn center-block btn-sm ordenar-btn btn-toggle  text-secondary"
+                        id="accesorios">Accesorios</button> <br class="d-none d-lg-block">
+                    <button class="btn center-block btn-sm ordenar-btn btn-toggle  text-secondary"
+                        id="electronica">Electrónica</button> <br class="d-none d-lg-block">
+                    <button class="btn center-block btn-sm ordenar-btn btn-toggle text-secondary active"
+                        id="buscarTodo"> Ver
+                        Todo</button>
+                </div>
+
+                <div id="botonesOrdenar">
+                    <div class="botones-busqueda  text-center pb-5">
+                        <h5 class="color-enfasis text-center py-3 color-principal">Ordenar Por</h5>
+                        <button class="btn center-block btn-sm ordenar-btn btn-toggle  text-secondary" type="button"
+                            id="precioAsc">Menor precio</button>
+                        <button class="btn center-block btn-sm ordenar-btn btn-toggle  text-secondary" type="button"
+                            id="precioDesc">Mayor precio</button>
+                        <button class="btn center-block btn-sm ordenar-btn btn-toggle  text-secondary" type="button"
+                            id="nombreAsc">A - Z</button>
+                        <button class="btn center-block btn-sm ordenar-btn btn-toggle  text-secondary" type="button"
+                            id="nombreDesc">Z - A</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIN MENÚ BUSQUEDA CATALOGO -->
+
+        <!-- INICIO MUESTRA CATALOGO -->
+
+        <div class="col-lg-9 col-md-12">
+            <div class="d-flex flex-wrap align-items-start" id="catalogo">
+
+
+            </div>
+        </div>
+        <!-- FIN MUESTRA CATALOGO -->
+    </div>
+    </div>
+
+
+
+    <div id="footer">
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
